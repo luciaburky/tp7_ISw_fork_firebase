@@ -1,46 +1,43 @@
 package com.example.tp4.entities;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
 import java.util.Date;
 
 @Entity
 public class Venta {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private Date fecha;
-    private Double montoTotal;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Integer id;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+  private Date fecha;
+  private Double montoTotal;
 
-    public int getId() {
-        return id;
-    }
+  public void setId(Integer id) {
+    this.id = id;
+  }
 
-    public Venta() {
-    }
+  public int getId() {
+    return id;
+  }
 
-    public Venta(Date fecha) {
-        this.fecha = fecha;
-    }
+  public Venta() {}
 
-    public Venta(Double montoTotal) {
-        this.montoTotal = montoTotal;
-    }
+  public Venta(Date fecha) {
+    this.fecha = fecha;
+  }
 
-    public Double getMontoTotal() {
-        return montoTotal;
-    }
+  public Venta(Double montoTotal) {
+    this.montoTotal = montoTotal;
+  }
 
-    public Venta(Integer id) {
-        this.id = id;
-    }
+  public Double getMontoTotal() {
+    return montoTotal;
+  }
+
+  public Venta(Integer id) {
+    this.id = id;
+  }
 }
-
