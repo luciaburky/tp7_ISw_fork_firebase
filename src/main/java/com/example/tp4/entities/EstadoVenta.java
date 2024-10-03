@@ -7,11 +7,14 @@ public class EstadoVenta {
     public EstadoVenta(Integer id) {
         this.id = id;
     }
+
     public Integer getId() {
         return id;
     }
-    public void setId(Integer id) { }
-    
+
+    public void setId(Integer id) {
+    }
+
     public EstadoVenta() {
     }
 
