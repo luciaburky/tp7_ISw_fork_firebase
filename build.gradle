@@ -77,7 +77,6 @@ tasks.withType(Checkstyle) {
     }
 }
 
-
 spotless {
     java {
         googleJavaFormat()
