@@ -34,5 +34,6 @@ public class Venta {
     public Venta(Integer id) {
         this.id = id;
     }
+
 }
 
