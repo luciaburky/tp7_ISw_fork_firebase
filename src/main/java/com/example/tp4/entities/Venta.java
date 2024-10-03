@@ -11,7 +11,6 @@ public class Venta {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Integer id;
-
   private Date fecha;
   private Double montoTotal;
 
